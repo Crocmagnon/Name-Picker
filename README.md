@@ -1,6 +1,6 @@
 # Name Picker
 ## Requirements
-This project requires __Java 8__
+This project requires __Java 8__ and uses Maven for dependencies management.
 
 ## Description
 This program helps you pick a name from a list according to some conditions. An example list that comes from the [French Government Open Data](https://www.data.gouv.fr/fr/datasets/liste-des-prenoms-par-annee-prs/) is included.
