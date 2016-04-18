@@ -8,10 +8,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.text.Normalizer;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 /**
@@ -32,7 +29,7 @@ public class ComputeResults implements Runnable {
     public void run() {
         try {
             Path filePath = Paths.get(file.getAbsolutePath());
-            List<String> validStrings = Files.lines(filePath).parallel().filter(this::isValid).collect(Collectors.toList());
+            Set<String> validStrings = Files.lines(filePath).parallel().filter(this::isValid).collect(Collectors.toSet());
             mainPanel.getValidNamesList().setListData(validStrings.toArray());
         }
         catch (FileNotFoundException e) {
