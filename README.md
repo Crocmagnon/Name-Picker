@@ -16,3 +16,6 @@ For the moment, the conditions are :
 - Exactly one B, or M, or P.
 
 Next releases are expected to implement a GUI for defining your own conditions.
+
+# Reuse
+If you do reuse my work, please consider linking back to this repository 🙂
